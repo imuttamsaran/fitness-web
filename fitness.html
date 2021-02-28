@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="fitness.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheecon">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(75deg, rgba(0, 0, 0, 0.39), rgba( 0, 0, 0, 0.49)), url(/gym_bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.header {
+    display: block;
+}
+
+.left {
+    /* border: 2px solid black; */
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.mid {
+    /* border: 2px solid black; */
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: -65px;
+    text-align: center;
+}
+
+.right {
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    display: flex;
+    /* border: 2px solid black; */
+}
+
+/* For Left area */
+
+.gym_logo {
+    height: 40px;
+    margin: 23px;
+    filter: invert(100%);
+}
+
+span {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 3px;
+}
+
+.logo {
+    margin: -26px 9px 18px 21px;
+    font-weight: 1000;
+    font-family: fantasy;
+}
+
+/* for mid area */
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 21px;
+    font-weight: 600;
+}
+
+.nav li a:hover {
+    color: rgb(211, 189, 189);
+    text-decoration: underline;
+}
+
+/* For Right */
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+}
+
+.icon {
+    height: 25px;
+    filter: invert(100%);
+    padding: 0px 8px;
+}
+
+.right h3 a {
+    margin: 0px;
+}
+
+.box {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 48%;
+}
+
+.btn {
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/28/RGB_illumination.jpg); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #f41e1e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 175px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 9px;
+}
+
+.butns {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn .butns:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover .butns {
+    padding-right: 25px;
+}
+
+.btn:hover .butns::after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(161, 46, 33);
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <a href="#"><img class="gym_logo" src="/gymlogo.png" alt="logo"></a>
+            <div class="logo">UT <span>T</span>AM</div>
+        </div>
+        <div class="mid">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sevices</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <h3 class="social">Follow Us</h3>
+            <a target="_blank" href="https://instagram.com/imuttamsaran"><img src="/instagram.jpg" alt="Instagram"
+                    class="icon"></a>
+            <a target="_blank" href="https://youtube.com"><img src="/youtube.jpg" alt="youtube" class="icon"></a>
+            <a target="_blank" href="https://facebook.com/imuttamsaran"><img src="/facebook.png" alt="Facebook"
+                    class="icon"></a>
+            <a target="_blank" href="https://twitter.com/imuttamsaran"><img src="/twitter.jpg" alt="Twitter"
+                    class="icon"></a>
+        </div>
+    </header>
+    <div class="box">
+        <button class="btn"><span class="butns">Join Us</span> </button>
+    </div>
+
+</body>
+
+</html>
